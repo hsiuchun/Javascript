@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.cover .room {
+    position: relative;
+}
+
+.cover img {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    /* 淡出淡入效果1秒 */
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+.cover img:last-child:hover {
+    /* 滑入時第一張透明度設0 */
+    opacity: 0;
+}
+
+.start {
+    display: flex;
+    /* 水平置中 */
+    justify-content: center;
+    /* 垂直置中 */
+    align-items: center;
+    padding-top: 83vh;
+}
+
+.start>h1 {
+    color: aliceblue;
+    font-size: 8vh;
+    -webkit-animation: blink 2s linear infinite;
+    -moz-animation: blink 2s linear infinite;
+    -o-animation: blink 2s linear infinite;
+    animation: blink 2s linear infinite;
+}
+
+#room1_bg img {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+
+.room>#room1_bed {
+    position: absolute;
+    padding-left: 5vw;
+    padding-top: 30vh;
+    z-index: 0;
+}
+
+.room>#room1_bed>img {
+    height: 55vh;
+    width: 15vw;
+    cursor: pointer;
+}
+
+.room>#room1_clock {
+    position: absolute;
+    padding-left: 45vw;
+    padding-top: 10vh;
+    z-index: 0;
+}
+
+.room>#room1_clock>img {
+    height: 50%;
+    width: 50%;
+}
+
+.room>#room1_box {
+    position: absolute;
+    z-index: 0;
+    padding-left: 40vw;
+    padding-top: 45vh;
+    width: 30vw;
+    height: 30vh;
+}
+
+.room>#room1_box div {
+    float: left;
+}
+
+.room>#room1_box>.left_drawer {
+    width: 15vw;
+}
+
+.left_drawer img {
+    width: 15vw;
+    margin-bottom: -0.6vh;
+}
+
+.right_drawer img {
+    height: 15.3vw;
+}
+
+.room>#room1_door {
+    position: absolute;
+    z-index: 0;
+    padding-left: 40vw;
+    padding-top: 15vh;
+}
+
+.room>#room1_door img {
+    height: 50vh;
+    width: 20vw;
+}
+
+.room>#room1_vase {
+    position: absolute;
+    z-index: 0;
+    padding-left: 60vw;
+    padding-top: 16vh;
+}
+
+.room>#room1_vase>img {
+    width: 10vw;
+}
+
+.room>#room1_vase2 {
+    position: absolute;
+    z-index: 0;
+    padding-left: 30vw;
+    padding-top: 16vh;
+}
+
+.room>#room1_vase2>img {
+    width: 10vw;
+}
+
+.room>#photo {
+    position: absolute;
+    z-index: 0;
+    padding-left: 30vw;
+    padding-top: 10vh;
+}
+
+.room>#photo>img {
+    width: 40vw;
+}
+
+
+/* takeout items */
+
+.click {
+    cursor: pointer;
+}
+
+
+/* show item details */
+
+.popupcontent {
+    position: absolute;
+    z-index: 1;
+    visibility: hidden;
+    overflow: hidden;
+    padding-left: 30vw;
+    padding-top: 5vh;
+}
+
+.popupcontent>img {
+    width: 40vw;
+    height: 60vh;
+}
+
+.popupcontent>#close_item {
+    position: relative;
+    z-index: 2;
+    padding-left: 38vw;
+    padding-top: 5vh;
+}
+
+.popupcontent>#close_item img {
+    width: 50%;
+    height: 50%;
+    cursor: pointer;
+}
+
+
+/* arrows to page*/
+
+.arrows {
+    position: absolute;
+    z-index: 0;
+    bottom: 1vh;
+    left: 6vh;
+}
+
+.arrows div {
+    float: left;
+}
+
+.arrows img {
+    width: 50%;
+    height: 50%;
+    cursor: pointer;
+}
+
+.arrows>#right_arrow {
+    padding-left: 76vw;
+}
+
+
+/* custom animation */
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

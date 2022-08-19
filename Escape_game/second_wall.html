@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room 1</title>
+    <link rel="stylesheet" href="escape.css">
+    <script src="escape_1.js"></script>
+</head>
+
+<body>
+    <div class="cantainer">
+        <div class="room">
+            <div id="room1_bg">
+                <img src="./images/room1_bg.png" alt="">
+            </div>
+
+            <div id="room1_vase2">
+                <img src="./images/room1_vase2.png" alt="">
+            </div>
+            <div id="room1_door">
+                <img class="click" src="./images/outdoor.png" alt="">
+            </div>
+
+            <div id="room1_vase">
+                <img class="click" src="./images/room1_vase.png" onclick="details('vase')" alt="">
+            </div>
+            <div class="popupcontent" id="vase_key">
+                <div id="close_item" onclick="hidePopup();"><img src="./images/close.png" alt=""></div>
+                <img src="./images/vase_key.png" alt="">
+
+            </div>
+            <div class="arrows">
+                <div id="left_arrow">
+                    <img src="./images/left_arrow.png" onclick="prewall(1)" alt="">
+                </div>
+                <div id="right_arrow">
+                    <img src="./images/right_arrow.png" onclick="nextwall(3)" alt="">
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

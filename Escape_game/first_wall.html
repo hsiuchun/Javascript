@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room 1</title>
+    <link rel="stylesheet" href="escape.css">
+    <script src="escape_1.js"></script>
+</head>
+
+<body>
+    <div class="cantainer">
+        <div class="room">
+            <div id="room1_bg">
+                <img src="./images/room1_bg.png" alt="">
+            </div>
+            <div id="room1_bed">
+                <img class="click" src="./images/room1_bed.png" onclick="details('bed')" alt="">
+            </div>
+            <div id="room1_clock">
+                <img class="click" src="./images/room1_clock.png" onclick="details('clock')" alt="">
+            </div>
+            <div id="room1_box">
+                <div class="left_drawer">
+                    <img class="click" src="./images/drawer_1.png" onclick="details('drawer1')" alt="">
+                    <img class="click" src="./images/drawer_2.png" onclick="details('drawer2')" alt="">
+                    <img class="click" src="./images/drawer_3.png" onclick="details('drawer3')" alt="">
+                </div>
+                <div class="right_drawer">
+                    <img class="click" src="./images/drawer_4.png" onclick="details('drawer4')" alt="">
+                </div>
+                <!-- <img src="./images/room1_box.png" alt=""> -->
+            </div>
+            <div class="popupcontent" id="bed_paper">
+                <div id="close_item" onclick="hidePopup();"><img src="./images/close.png" alt=""></div>
+                <img src="./images/bed_paper.png" alt="">
+            </div>
+            <div class="popupcontent" id="drawer1">
+                <div id="close_item" onclick="hidePopup();"><img src="./images/close.png" alt=""></div>
+                <img src="./images/empty.png" alt="">
+            </div>
+            <div class="popupcontent" id="drawer2">
+                <div id="close_item" onclick="hidePopup();"><img src="./images/close.png" alt=""></div>
+                <img class="click" id="diamond" src="./images/drawer2_diamond.png" onclick="takeout('diamond')" alt="">
+            </div>
+            <div class="popupcontent" id="drawer3">
+                <div id="close_item" onclick="hidePopup();"><img src="./images/close.png" alt=""></div>
+                <img src="./images/drawer3.png" alt="">
+            </div>
+            <div class="popupcontent" id="drawer4">
+                <div id="close_item" onclick="hidePopup();"><img src="./images/close.png" alt=""></div>
+                <img src="./images/drawer4.png" alt="">
+            </div>
+
+            <div class="arrows">
+                <div id="left_arrow">
+                    <img class="click" src="./images/left_arrow.png" onclick="prewall(4)" alt="">
+                </div>
+                <div id="right_arrow">
+                    <img class="click" src="./images/right_arrow.png" onclick="nextwall(2)" alt="">
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

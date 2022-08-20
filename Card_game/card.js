@@ -69,6 +69,7 @@ function choose_card(chosen_level) {
 }
 
 function draw_card(num) {
+     reset()
     var cards = []
     for (var i = 0; i < num; i++) {
         var card_description = choose_level(card_level)

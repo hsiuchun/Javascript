@@ -21,15 +21,22 @@
                 <img src="./images/room1_vase2.png" alt="">
             </div>
             <div id="room1_door">
-                <img class="click" src="./images/outdoor.png" alt="">
+                <img class="click" src="./images/outdoor.png" onclick="details('outside')" alt="">
             </div>
 
             <div id="room1_vase">
                 <img class="click" src="./images/room1_vase.png" onclick="details('vase')" alt="">
             </div>
+
+            <div class="popupcontent" id="outside">
+                <div id="close_item" onclick="hidePopup();"><img src="./images/close.png" alt=""></div>
+                <img id="final_lock" src="./images/lock.png" alt="">
+
+            </div>
+
             <div class="popupcontent" id="vase_key">
                 <div id="close_item" onclick="hidePopup();"><img src="./images/close.png" alt=""></div>
-                <img src="./images/vase_key.png" alt="">
+                <img class="click" id="box_key" src="./images/vase_key.png" onclick="takeout('box_key')" alt="">
 
             </div>
             <div class="arrows">

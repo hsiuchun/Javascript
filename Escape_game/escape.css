@@ -56,11 +56,18 @@
     z-index: -1;
 }
 
+#room1_end img {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+
 .room>#room1_bed {
     position: absolute;
     padding-left: 5vw;
     padding-top: 30vh;
-    z-index: 0;
+    z-index: 2;
 }
 
 .room>#room1_bed>img {
@@ -73,7 +80,7 @@
     position: absolute;
     padding-left: 45vw;
     padding-top: 10vh;
-    z-index: 0;
+    z-index: 2;
 }
 
 .room>#room1_clock>img {
@@ -83,7 +90,7 @@
 
 .room>#room1_box {
     position: absolute;
-    z-index: 0;
+    z-index: 1;
     padding-left: 40vw;
     padding-top: 45vh;
     width: 30vw;
@@ -109,7 +116,7 @@
 
 .room>#room1_door {
     position: absolute;
-    z-index: 0;
+    z-index: 1;
     padding-left: 40vw;
     padding-top: 15vh;
 }
@@ -152,6 +159,93 @@
     width: 40vw;
 }
 
+.num_lock {
+    z-index: 2;
+    position: absolute;
+    left: 32.3vw;
+    top: 38vh;
+    visibility: hidden;
+}
+
+#num_lock2 {
+    left: 36vw;
+    top: 37vh;
+}
+
+#letter_lock {
+    left: 36vw;
+    top: 50vh;
+}
+
+.num_lock .num_arrow img {
+    width: 3vw;
+    padding-left: 2vw;
+}
+
+.num_lock .number img {
+    width: 7vw;
+}
+
+.room>#room1_dressing {
+    position: absolute;
+    z-index: 1;
+    padding-left: 15vw;
+    padding-top: 20vh;
+}
+
+.room>#room1_dressing>img {
+    width: 20vw;
+}
+
+.room>#room1_wardrobe {
+    position: absolute;
+    z-index: 0;
+    padding-left: 43vw;
+    padding-top: 9vh;
+}
+
+.room>#room1_wardrobe>img {
+    height: 60vh;
+}
+
+#open_wardrobe {
+    visibility: hidden;
+}
+
+.room>.flowerpot {
+    position: absolute;
+    z-index: -1;
+}
+
+.room>#pot_blue {
+    padding-left: 80vw;
+    padding-top: 50vh;
+}
+
+.room>#pot_red {
+    padding-left: 80vw;
+    padding-top: 50vh;
+}
+
+.room>#pot_purple {
+    padding-left: 20vw;
+    padding-top: 50vh;
+}
+
+.room>#pot_green {
+    padding-left: 80vw;
+    padding-top: 50vh;
+}
+
+.room>#pot_yellow {
+    padding-left: 22vw;
+    padding-top: 50vh;
+}
+
+.room>.flowerpot>img {
+    width: 5vw;
+}
+
 
 /* takeout items */
 
@@ -164,7 +258,7 @@
 
 .popupcontent {
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     visibility: hidden;
     overflow: hidden;
     padding-left: 30vw;
@@ -178,7 +272,7 @@
 
 .popupcontent>#close_item {
     position: relative;
-    z-index: 2;
+    z-index: 3;
     padding-left: 38vw;
     padding-top: 5vh;
 }

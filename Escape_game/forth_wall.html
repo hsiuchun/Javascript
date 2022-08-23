@@ -16,6 +16,57 @@
             <div id="room1_bg">
                 <img src="./images/room1_bg.png" alt="">
             </div>
+            <div id="room1_dressing">
+                <img id="dressing_table" class="click" src="./images/dressing_table.png" onclick="details('dressing')" alt="">
+            </div>
+            <div id="room1_wardrobe">
+                <img id="close_wardrobe" class="click" src="./images/wardrobe.png" onclick="details('wardrobe')" alt="">
+                <!-- <img id="open_wardrobe" class="click" src="./images/open_wardrobe.png" onclick="details('wardrobe_cloth')" alt=""> -->
+            </div>
+            <div class="flowerpot" id="pot_blue">
+                <img src="./images/pot_blue.png" alt="">
+            </div>
+
+            <div class="popupcontent" id="dressing_lock">
+                <div id="close_item" onclick="hidePopup();"><img src="./images/close.png" alt=""></div>
+                <img id="table_lock" src="./images/lock.png" alt="">
+
+            </div>
+
+            <div class="popupcontent" id="wardrobe">
+                <div id="close_item" onclick="hidePopup();"><img src="./images/close.png" alt=""></div>
+                <img src="./images/wardrobe_lock.png" alt="">
+            </div>
+
+            <div class="popupcontent" id="open_wardrobe">
+                <div id="close_item" onclick="hidePopup();"><img src="./images/close.png" alt=""></div>
+                <img class="click" id="wardrobe_key" onclick="takeout('wardrobe_key')" src="./images/wardrobe_key.png" alt="">
+            </div>
+            <div class="num_lock" id="num_lock2">
+                <table>
+                    <tr class="num_arrow">
+                        <td><img class="click" onclick="prevnum(2, 1)" src="./images/up_arrow.png" alt=""></td>
+                        <td><img class="click" onclick="prevnum(2, 2)" src="./images/up_arrow.png" alt=""></td>
+                        <td><img class="click" onclick="prevnum(2, 3)" src="./images/up_arrow.png" alt=""></td>
+                        <td><img class="click" onclick="prevnum(2, 4)" src="./images/up_arrow.png" alt=""></td>
+
+                    </tr>
+                    <tr class="number">
+                        <td><img id="num21" src="./images/num_0.png" alt=""></td>
+                        <td><img id="num22" src="./images/num_0.png" alt=""></td>
+                        <td><img id="num23" src="./images/num_0.png" alt=""></td>
+                        <td><img id="num24" src="./images/num_0.png" alt=""></td>
+
+                    </tr>
+                    <tr class="num_arrow">
+                        <td><img class="click" onclick="nextnum(2, 1)" src="./images/down_arrow.png" alt=""></td>
+                        <td><img class="click" onclick="nextnum(2, 2)" src="./images/down_arrow.png" alt=""></td>
+                        <td><img class="click" onclick="nextnum(2, 3)" src="./images/down_arrow.png" alt=""></td>
+                        <td><img class="click" onclick="nextnum(2, 4)" src="./images/down_arrow.png" alt=""></td>
+
+                    </tr>
+                </table>
+            </div>
 
             <div class="arrows">
                 <div id="left_arrow">

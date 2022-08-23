@@ -19,8 +19,11 @@
             <div id="room1_bed">
                 <img class="click" src="./images/room1_bed.png" onclick="details('bed')" alt="">
             </div>
+            <div class="flowerpot" id="pot_yellow">
+                <img src="./images/pot_yellow.png" alt="">
+            </div>
             <div id="room1_clock">
-                <img class="click" src="./images/room1_clock.png" onclick="details('clock')" alt="">
+                <img id="clock" class="click" src="./images/clock_1.png" onclick="details('clock')" alt="">
             </div>
             <div id="room1_box">
                 <div class="left_drawer">
@@ -31,15 +34,19 @@
                 <div class="right_drawer">
                     <img class="click" src="./images/drawer_4.png" onclick="details('drawer4')" alt="">
                 </div>
-                <!-- <img src="./images/room1_box.png" alt=""> -->
             </div>
+            <div class="flowerpot" id="pot_red">
+                <img src="./images/pot_red.png" alt="">
+            </div>
+
             <div class="popupcontent" id="bed_paper">
                 <div id="close_item" onclick="hidePopup();"><img src="./images/close.png" alt=""></div>
-                <img src="./images/bed_paper.png" alt="">
+                <img id="clock_paper" class="click" onclick="details('bed_paper')" src="./images/bed_paper.png" alt="">
             </div>
+
             <div class="popupcontent" id="drawer1">
                 <div id="close_item" onclick="hidePopup();"><img src="./images/close.png" alt=""></div>
-                <img src="./images/empty.png" alt="">
+                <img src="./images/empty_drawer.png" alt="">
             </div>
             <div class="popupcontent" id="drawer2">
                 <div id="close_item" onclick="hidePopup();"><img src="./images/close.png" alt=""></div>
@@ -47,13 +54,64 @@
             </div>
             <div class="popupcontent" id="drawer3">
                 <div id="close_item" onclick="hidePopup();"><img src="./images/close.png" alt=""></div>
-                <img src="./images/drawer3.png" alt="">
+                <img id="book_paper" src="./images/drawer3_lock.png" alt="">
+            </div>
+
+            <div class="num_lock" id="num_lock">
+                <table>
+                    <tr class="num_arrow">
+                        <td><img class="click" onclick="prevnum(1, 1)" src="./images/up_arrow.png" alt=""></td>
+                        <td><img class="click" onclick="prevnum(1, 2)" src="./images/up_arrow.png" alt=""></td>
+                        <td><img class="click" onclick="prevnum(1, 3)" src="./images/up_arrow.png" alt=""></td>
+                        <td><img class="click" onclick="prevnum(1, 4)" src="./images/up_arrow.png" alt=""></td>
+                        <td><img class="click" onclick="prevnum(1, 5)" src="./images/up_arrow.png" alt=""></td>
+                    </tr>
+                    <tr class="number">
+                        <td><img id="num1" src="./images/num_0.png" alt=""></td>
+                        <td><img id="num2" src="./images/num_0.png" alt=""></td>
+                        <td><img id="num3" src="./images/num_0.png" alt=""></td>
+                        <td><img id="num4" src="./images/num_0.png" alt=""></td>
+                        <td><img id="num5" src="./images/num_0.png" alt=""></td>
+                    </tr>
+                    <tr class="num_arrow">
+                        <td><img class="click" onclick="nextnum(1, 1)" src="./images/down_arrow.png" alt=""></td>
+                        <td><img class="click" onclick="nextnum(1, 2)" src="./images/down_arrow.png" alt=""></td>
+                        <td><img class="click" onclick="nextnum(1, 3)" src="./images/down_arrow.png" alt=""></td>
+                        <td><img class="click" onclick="nextnum(1, 4)" src="./images/down_arrow.png" alt=""></td>
+                        <td><img class="click" onclick="nextnum(1, 5)" src="./images/down_arrow.png" alt=""></td>
+                    </tr>
+                </table>
             </div>
             <div class="popupcontent" id="drawer4">
                 <div id="close_item" onclick="hidePopup();"><img src="./images/close.png" alt=""></div>
-                <img src="./images/drawer4.png" alt="">
-            </div>
+                <img id="box_gift" src="./images/lock.png" alt="">
 
+            </div>
+            <div class="num_lock" id="letter_lock">
+                <table>
+                    <tr class="num_arrow">
+                        <td><img class="click" onclick="prevletter(1)" src="./images/up_arrow.png" alt=""></td>
+                        <td><img class="click" onclick="prevletter(2)" src="./images/up_arrow.png" alt=""></td>
+                        <td><img class="click" onclick="prevletter(3)" src="./images/up_arrow.png" alt=""></td>
+                        <td><img class="click" onclick="prevletter(4)" src="./images/up_arrow.png" alt=""></td>
+
+                    </tr>
+                    <tr class="number">
+                        <td><img id="letter1" src="./images/letter_1.png" alt=""></td>
+                        <td><img id="letter2" src="./images/letter_1.png" alt=""></td>
+                        <td><img id="letter3" src="./images/letter_1.png" alt=""></td>
+                        <td><img id="letter4" src="./images/letter_1.png" alt=""></td>
+
+                    </tr>
+                    <tr class="num_arrow">
+                        <td><img class="click" onclick="nextletter(1)" src="./images/down_arrow.png" alt=""></td>
+                        <td><img class="click" onclick="nextletter(2)" src="./images/down_arrow.png" alt=""></td>
+                        <td><img class="click" onclick="nextletter(3)" src="./images/down_arrow.png" alt=""></td>
+                        <td><img class="click" onclick="nextletter(4)" src="./images/down_arrow.png" alt=""></td>
+
+                    </tr>
+                </table>
+            </div>
             <div class="arrows">
                 <div id="left_arrow">
                     <img class="click" src="./images/left_arrow.png" onclick="prewall(4)" alt="">

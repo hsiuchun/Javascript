@@ -7,6 +7,7 @@
 
 ## EP1. Save girl
 ### Start Game (Open "index.html")
+
 1. Tap to start
 
 ![](https://i.imgur.com/fRPnTPd.png)

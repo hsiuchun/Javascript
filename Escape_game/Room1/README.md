@@ -22,4 +22,4 @@
 
 4. Get out of room
 
-![](https://i.imgur.com/KOMU6z8.png)
+![](https://i.imgur.com/ZVYZ8TA.png)
